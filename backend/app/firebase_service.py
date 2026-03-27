@@ -1,11 +1,16 @@
+import json
+import os
+
 import firebase_admin
 from firebase_admin import credentials, messaging
-from app.core.config import FIREBASE_API_KEY, FIREBASE_CREDENTIALS_PATH
+from app.core.config import FIREBASE_API_KEY
 
 API_KEY = FIREBASE_API_KEY
 
 if not firebase_admin._apps:
-    cred = credentials.Certificate(FIREBASE_CREDENTIALS_PATH)
+    firebase_json = os.getenv("FIREBASE_CREDENTIALS")
+    cred_dict = json.loads(firebase_json)
+    cred = credentials.Certificate(cred_dict)
     firebase_admin.initialize_app(cred)
 
 
