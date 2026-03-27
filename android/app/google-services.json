@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "522827073811",
+    "project_id": "planfinity-36f53",
+    "storage_bucket": "planfinity-36f53.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522827073811:android:f25589ecc60391bac7b2e6",
+        "android_client_info": {
+          "package_name": "com.example.planfinity"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB22Eu78y00pkwTDPlOb7X5joWmWkFa7hE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
